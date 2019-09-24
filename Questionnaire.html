@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Questionnaire </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="title">
+        <h1>Questionnaire</h1>
+    </div>
+    <div class="column_1">
+        <h2>Gender</h2>
+        <label><input type="radio" name="Gender" value="Male" id="male">Male</label>
+        <label><input type="radio" name="Gender" value="Female" id="female">Female</label>
+    </div>
+    <div class="column_2">
+        <h2>Age</h2>
+        <label><input type="radio" name="Age" value="under18" id="under18">Under 18</label>
+        <label><input type="radio" name="Age" value="above18" id="above18">18 +</label>
+    </div>
+    <div>
+        <h2>Major</h2>
+        <input type="text" id="major" value="">
+    </div>
+    <div>
+        <h2>Get Your Temporary Id</h2>
+        <input type="text" id="userID" disabled="disabled" value="">
+        <button onclick="generateID()"> Generate </button>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div>
+        <h2>Submit</h2>
+        <button onclick="saveUser()"> Submit </button>
+    </div>
+    <div>
+        <h2>Submit</h2>
+        <button onclick="displayResult()"> display </button>
+    </div>
+    <!--<div>-->
+        <!--<h2>Back</h2>-->
+        <!--<button onclick="window.location.href='index.html'"> Back </button>-->
+    <!--</div>-->
+</div>
+</body>
+</html>
